@@ -1,0 +1,9 @@
+
+<p><b>Name:</b> <%= @content_block.name %></p>
+<p><b>Description:</b> <%= @content_block.description %></p>
+<p><b>Clients:</b></p>
+<ul>
+<% for client in @content_block.users do %>
+	<li><%= client.first_name + ' ' + client.last_name %></li>
+<% end %>
+</ul>

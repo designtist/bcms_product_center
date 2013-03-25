@@ -1,0 +1,14 @@
+
+<%= f.cms_text_field :name %>
+<%= f.cms_text_editor :description %>
+<div id="product_client_mapping" class="fields">
+	<ul>
+		<% for user in Cms::User.find(:all) do %>
+		<li>
+			<%= check_box_tag "product[user_ids][]", user.id, @block.user_ids.include?(user.id), :id => "product[user_id][#{user.id}]"%>
+			<%= label_tag "product[user_id][#{user.id}]", "#{user.first_name + ' '+ user.last_name}" %>
+		</li>
+		<% end %>
+		<%= hidden_field_tag "product[user_ids][]" %>	
+	</ul>
+</div>

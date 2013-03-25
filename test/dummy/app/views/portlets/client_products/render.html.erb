@@ -1,0 +1,5 @@
+<ul>
+	<% for product in @products do %>
+		<li><b><%= product.name %>:</b> <% for patch in product.patches do %><%= link_to "#{patch.name+' v'+patch.ver+' '}", patch.file.url(:original) %><% end %></li>
+	<% end %>
+</ul>

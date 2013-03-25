@@ -1,0 +1,6 @@
+
+<p><b>Name:</b> <%= @content_block.name %></p>
+<p><b>Description:</b> <%= @content_block.description %></p>
+<p><b>Ver:</b> <%= @content_block.ver %></p>
+<p><b>Product:</b> <%= @content_block.product_id %></p>
+<p><b>Patch:</b> <%= link_to "Download Patch-Datei (#{@content_block.file.file_name})", @content_block.file.url(:original) %></p>
