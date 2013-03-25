@@ -5,7 +5,7 @@ require "bcms_product_center/version"
 
 # Describe your gem and declare its dependencies:
 Gem::Specification.new do |s|
-      s.add_dependency "browsercms", "~> 3.5.5"
+      s.add_dependency "browsercms", "~> 3.5.3"
 
   s.name        = "bcms_product_center"
   s.version     = BcmsProductCenter::VERSION
