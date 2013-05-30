@@ -1,12 +1,6 @@
-
 <%= f.cms_text_field :name %>
 <% f.cms_text_editor :description %>
 <%= f.cms_text_field :ver %>
 <%= f.cms_drop_down :product_id, BcmsProductCenter::Product.find(:all, :order => "name").map{|c| [c.name, c.id]}, :prompt => "Produkt auswählen", :label => "Produkt", :instructions => "Festlegen für welches Produkt dieses Update ist." %>
 <%= f.cms_file_field :file, :label => "Patch-Datei" %>
-<!-- <div class="fields">
-	<div id="file_inputs">
-		<%= label_tag "update_file", "Patch-Datei" %>
-		<%= f.file_field :file %>		
-	</div>
-</div> -->
+<%= f.cms_check_box :archived, :label => "archiviert" %>

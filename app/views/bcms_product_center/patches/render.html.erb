@@ -4,3 +4,4 @@
 <p><b>Ver:</b> <%= @content_block.ver %></p>
 <p><b>Product:</b> <%= @content_block.product_id %></p>
 <p><b>Patch:</b> <%= link_to "Download Patch-Datei (#{@content_block.file.file_name})", @content_block.file.url(:original) %></p>
+<p><b>Archiviert:</b> <%= check_box_tag 'archiviert', 'archiviert', @content_block.archived, :disabled => true %></p>

@@ -1,5 +1,5 @@
 module BcmsProductCenter
-  class Product < ActiveRecord::Base
+  class BcmsProductCenter::Product < ActiveRecord::Base
     attr_accessible :user_ids, :project_ids
     
     has_many :product_client_mappings
@@ -9,5 +9,6 @@ module BcmsProductCenter
     accepts_nested_attributes_for :product_client_mappings
     
     acts_as_content_block
+
   end
 end

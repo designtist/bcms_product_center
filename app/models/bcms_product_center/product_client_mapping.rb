@@ -1,5 +1,5 @@
 module BcmsProductCenter
-  class ProductClientMapping < ActiveRecord::Base
+  class BcmsProductCenter::ProductClientMapping < ActiveRecord::Base
     attr_accessible :user_id, :project_id
     
     belongs_to :product

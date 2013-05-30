@@ -1,6 +1,18 @@
-<%=h @portlet.name %>
+<h4>Ihre Updates:</h4>
 <ul>
 	<% for product in @products do %>
-		<li><b><%= product.name %>:</b></li>
+		<li class="product_name"><b><%= product.name %>:</b>
+			<ul class="patch_list">
+				<% if product.patches.active.length > 0 %>
+					<% for patch in product.patches do %>
+						<% if patch.archived == false  %>
+							<li class="patch_name"><%= link_to "Download Patch-Datei (#{patch.file.file_name})", patch.file.url(:original) %></li>
+						<% end %>
+					<% end %>
+				<% else %>
+					<li>Dieses Produkt ist up to date.</li>
+				<% end %>
+			</ul>
+		</li>
 	<% end %>
 </ul>

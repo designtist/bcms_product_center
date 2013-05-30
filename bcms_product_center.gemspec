@@ -9,15 +9,18 @@ Gem::Specification.new do |s|
 
   s.name        = "bcms_product_center"
   s.version     = BcmsProductCenter::VERSION
-  s.authors     = ["TODO: Your name"]
+  s.authors     = ["designtist"]
   s.email       = ["TODO: Your email"]
   s.homepage    = "TODO"
   s.summary     = "TODO: Summary of BcmsProductCenter."
   s.description = "TODO: Description of BcmsProductCenter."
 
-  s.files = Dir["{app,config,db,lib}/**/*"] + ["MIT-LICENSE", "Rakefile", "README.rdoc"]
-    s.files -= Dir['lib/tasks/module_tasks.rake']
+  s.files = Dir["{app,config,db,lib}/**/*"] + ["Gemfile", "MIT-LICENSE", "README.rdoc"]
+    # s.files -= Dir['lib/tasks/module_tasks.rake']
   s.test_files = Dir["test/**/*"]
+    s.test_files -= Dir['test/dummy/**/*']
+  
+  s.require_paths = ["lib"]
 
   # Depend on BrowserCMS,rather than Rails 
  # s.add_dependency "rails", "~> 3.2.12"

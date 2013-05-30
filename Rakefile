@@ -36,7 +36,7 @@ Rake::TestTask.new(:test) do |t|
   t.verbose = false
 end
 
-
-task :default => :test
-
-load 'lib/tasks/module_tasks.rake'
+# 
+# task :default => :test
+# 
+# load 'lib/tasks/module_tasks.rake'
