@@ -11,9 +11,9 @@ Gem::Specification.new do |s|
   s.version     = BcmsProductCenter::VERSION
   s.authors     = ["designtist"]
   s.email       = "hello@designtist.at"
-  s.homepage    = "TODO"
-  s.summary     = "TODO: Summary of BcmsProductCenter."
-  s.description = "TODO: Description of BcmsProductCenter."
+  s.homepage    = ""
+  s.summary     = "Summary of BcmsProductCenter."
+  s.description = "Description of BcmsProductCenter."
 
   s.files = Dir["{app,config,db,lib}/**/*"] + ["Gemfile", "MIT-LICENSE", "README.rdoc"]
     # s.files -= Dir['lib/tasks/module_tasks.rake']
