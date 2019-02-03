@@ -10,7 +10,7 @@ Gem::Specification.new do |s|
   s.name        = "bcms_product_center"
   s.version     = BcmsProductCenter::VERSION
   s.authors     = ["designtist"]
-  s.email       = ["TODO: Your email"]
+  s.email       = "hello@designtist.at"
   s.homepage    = "TODO"
   s.summary     = "TODO: Summary of BcmsProductCenter."
   s.description = "TODO: Description of BcmsProductCenter."
